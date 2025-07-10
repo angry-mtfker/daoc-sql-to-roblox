@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `race` (
 
 /*!40000 ALTER TABLE `race` DISABLE KEYS */;
 REPLACE INTO `race` (`ID`, `Name`, `ResistBody`, `ResistCold`, `ResistCrush`, `ResistEnergy`, `ResistHeat`, `ResistMatter`, `ResistNatural`, `ResistSlash`, `ResistSpirit`, `ResistThrust`, `LastTimeRowUpdated`, `Race_ID`) VALUES
-	(1, 'Briton', 0, 0, 2, 0, 0, 5, 0, 3, 0, 0, '2000-01-01 00:00:00', '1'),
+	(1, 'Briton', 0, 0, 2, 0, 0, 0, 0, 3, 5, 0, '2000-01-01 00:00:00', '1'),
 	(10, 'Firbolg', 0, 0, 3, 0, 5, 0, 0, 2, 0, 0, '2000-01-01 00:00:00', '10'),
 	(11, 'Elf', 0, 0, 0, 0, 0, 0, 0, 2, 5, 3, '2000-01-01 00:00:00', '11'),
 	(12, 'Lurikeen', 0, 0, 5, 5, 0, 0, 0, 0, 0, 0, '2000-01-01 00:00:00', '12'),
@@ -37,7 +37,7 @@ REPLACE INTO `race` (`ID`, `Name`, `ResistBody`, `ResistCold`, `ResistCrush`, `R
 	(17, 'Frostalf', 0, 0, 0, 0, 0, 0, 0, 2, 5, 3, '2000-01-01 00:00:00', '17'),
 	(18, 'Shar', 0, 0, 5, 5, 0, 0, 0, 0, 0, 0, '2000-01-01 00:00:00', '18'),
 	(19, 'AlbionMinotaur', 0, 3, 4, 0, 3, 0, 0, 0, 0, 0, '2000-01-01 00:00:00', '19'),
-	(2, 'Avalonian', 0, 0, 2, 0, 0, 5, 0, 3, 0, 0, '2000-01-01 00:00:00', '2'),
+	(2, 'Avalonian', 0, 0, 2, 0, 0, 0, 0, 3, 5, 0, '2000-01-01 00:00:00', '2'),
 	(20, 'MidgardMinotaur', 0, 3, 4, 0, 3, 0, 0, 0, 0, 0, '2000-01-01 00:00:00', '20'),
 	(21, 'HiberniaMinotaur', 0, 3, 4, 0, 3, 0, 0, 0, 0, 0, '2000-01-01 00:00:00', '21'),
 	(3, 'Highlander', 0, 5, 3, 0, 0, 0, 0, 2, 0, 0, '2000-01-01 00:00:00', '3'),
