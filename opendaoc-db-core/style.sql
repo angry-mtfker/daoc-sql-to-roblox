@@ -1,9 +1,12 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
 CREATE TABLE IF NOT EXISTS `style` (
   `Style_ID` varchar(255) NOT NULL DEFAULT '',
   `ID` int(11) NOT NULL DEFAULT 0,
@@ -31,7 +34,6 @@ CREATE TABLE IF NOT EXISTS `style` (
   KEY `I_Style_SpecKeyName` (`SpecKeyName`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1201 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
-/*!40000 ALTER TABLE `style` DISABLE KEYS */;
 REPLACE INTO `style` (`Style_ID`, `ID`, `ClassId`, `Name`, `SpecKeyName`, `SpecLevelRequirement`, `Icon`, `EnduranceCost`, `StealthRequirement`, `OpeningRequirementType`, `OpeningRequirementValue`, `AttackResultRequirement`, `WeaponTypeRequirement`, `GrowthRate`, `BonusToHit`, `BonusToDefense`, `TwoHandAnimation`, `RandomProc`, `ArmorHitLocation`, `StyleID`, `LastTimeRowUpdated`, `GrowthOffset`) VALUES
 	('', 72, 1, 'Back Crush', 'Crush', 4, 72, 5, 0, 2, 0, 0, 2, 0.604, 10, 0, 72, 0, 0, 2, '2021-09-26 00:00:00', 0),
 	('', 73, 1, 'Maul', 'Crush', 6, 73, 15, 0, 0, 0, 0, 2, 0.361, 15, -5, 73, 0, 0, 3, '2021-09-26 00:00:00', 0),
@@ -941,7 +943,7 @@ REPLACE INTO `style` (`Style_ID`, `ID`, `ClassId`, `Name`, `SpecKeyName`, `SpecL
 	('', 299, 44, 'Gigantic Blow', 'Large Weapons', 25, 299, 5, 0, 0, 295, 7, 22, 0.971, 15, 0, 299, 0, 0, 907, '2021-09-26 00:00:00', 0),
 	('', 300, 44, 'Ultimate Recovery', 'Large Weapons', 29, 300, 10, 0, 0, 0, 3, 22, 0.917, 10, -5, 300, 0, 0, 908, '2021-09-26 00:00:00', 0),
 	('', 301, 44, 'Demolish', 'Large Weapons', 34, 301, 10, 0, 0, 297, 7, 22, 0.883, 15, 10, 301, 0, 0, 909, '2021-09-26 00:00:00', 0),
-	('', 302, 44, 'Shatter', 'Large Weapons', 39, 302, 10, 0, 0, 4, 4, 22, 0.883, 10, 5, 302, 0, 0, 910, '2021-09-26 00:00:00', 0),
+	('', 302, 44, 'Shatter', 'Large Weapons', 39, 302, 10, 0, 0, 0, 4, 22, 0.883, 10, 5, 302, 0, 0, 910, '2021-09-26 00:00:00', 0),
 	('', 303, 44, 'Devastate', 'Large Weapons', 44, 303, 5, 0, 0, 300, 7, 22, 0.883, 10, 15, 303, 0, 0, 911, '2021-09-26 00:00:00', 0),
 	('', 304, 44, 'Annihilation', 'Large Weapons', 50, 304, 10, 0, 2, 0, 0, 22, 0.94, 20, -10, 304, 0, 0, 912, '2021-09-26 00:00:00', 0),
 	('', 275, 44, 'Dragonfly', 'Piercing', 2, 275, 15, 0, 0, 0, 0, 21, 0.035, 0, 0, 275, 0, 0, 913, '2021-09-26 00:00:00', 0),
@@ -1010,7 +1012,7 @@ REPLACE INTO `style` (`Style_ID`, `ID`, `ClassId`, `Name`, `SpecKeyName`, `SpecL
 	('', 299, 45, 'Gigantic Blow', 'Large Weapons', 25, 299, 5, 0, 0, 295, 7, 22, 0.971, 15, 0, 299, 0, 0, 976, '2021-09-26 00:00:00', 0),
 	('', 300, 45, 'Ultimate Recovery', 'Large Weapons', 29, 300, 10, 0, 0, 0, 3, 22, 0.917, 10, -5, 300, 0, 0, 977, '2021-09-26 00:00:00', 0),
 	('', 301, 45, 'Demolish', 'Large Weapons', 34, 301, 10, 0, 0, 297, 7, 22, 0.883, 15, 10, 301, 0, 0, 978, '2021-09-26 00:00:00', 0),
-	('', 302, 45, 'Shatter', 'Large Weapons', 39, 302, 10, 0, 0, 4, 4, 22, 0.883, 10, 5, 302, 0, 0, 979, '2021-09-26 00:00:00', 0),
+	('', 302, 45, 'Shatter', 'Large Weapons', 39, 302, 10, 0, 0, 0, 4, 22, 0.883, 10, 5, 302, 0, 0, 979, '2021-09-26 00:00:00', 0),
 	('', 303, 45, 'Devastate', 'Large Weapons', 44, 303, 5, 0, 0, 300, 7, 22, 0.883, 10, 15, 303, 0, 0, 980, '2021-09-26 00:00:00', 0),
 	('', 304, 45, 'Annihilation', 'Large Weapons', 50, 304, 10, 0, 2, 0, 0, 22, 0.94, 20, -10, 304, 0, 0, 981, '2021-09-26 00:00:00', 0),
 	('', 275, 45, 'Dragonfly', 'Piercing', 2, 275, 15, 0, 0, 0, 0, 21, 0.035, 0, 0, 275, 0, 0, 982, '2021-09-26 00:00:00', 0),
@@ -1232,5 +1234,9 @@ REPLACE INTO `style` (`Style_ID`, `ID`, `ClassId`, `Name`, `SpecKeyName`, `SpecL
 	('', 83, 19, 'Bone Crusher', 'Crush', 39, 83, 5, 0, 0, 76, 7, 2, 0.854, 10, 10, 83, 0, 0, 1198, '2021-09-26 00:00:00', 0),
 	('', 84, 19, 'Body Masher', 'Crush', 44, 84, 10, 0, 0, 81, 7, 2, 0.74, 10, 0, 84, 0, 0, 1199, '2021-09-26 00:00:00', 0),
 	('', 85, 19, 'Devastate', 'Crush', 50, 85, 15, 0, 0, 82, 7, 2, 0.864, 15, -10, 85, 0, 0, 1200, '2021-09-26 00:00:00', 0);
-/*!40000 ALTER TABLE `style` ENABLE KEYS */;
 
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
