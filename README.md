@@ -1,17 +1,17 @@
 
 # OpenDAoC Databases Dump
 
-This repository contains the latest cleaned up databases dump for use with [OpenDAoC-Core](https://github.com/OpenDAoC/OpenDAoC-Core) and [OpenDAoC-PvP](https://github.com/OpenDAoC/OpenDAoC-PvP). 
+This repository contains the latest cleaned up databases dump for use with [OpenDAoC-Core](https://github.com/OpenDAoC/OpenDAoC-Core). 
 
 ## Description
 
-The databases dump provided in this repository serves as a foundation for running the OpenDAoC-Core and OpenDAoC-PvP projects. 
-It includes essential game data required to set up and operate these projects effectively.
+The databases dump provided in this repository serves as a foundation for running the OpenDAoC-Core project. 
+It includes essential game data required to set up and operate this project effectively.
 
 ## Update: Changes to Database Format
 Previously, the databases dump was provided as a zip file. However, to increase the maintainability of the database and leverage GitHub's diff/branching capabilities, the database is now provided in multiple .sql files, divided per single table.
 
-These files are organized into two folders: `opendaoc-db-core` and `opendaoc-db-pvp`.
+These files are organized into the folder: `opendaoc-db-core`.
 
 ### Combining the files
 Although this is not required, users can combine the files back into a single file for easier import into a database management system.
@@ -22,7 +22,7 @@ Alternatively, users can work with the single table files as needed.
 
 ## Usage
 
-To use this databases dump with OpenDAoC-Core and OpenDAoC-PvP, follow these steps:
+To use this databases dump with OpenDAoC-Core, follow these steps:
 
 1.  Clone or download the repository to your local machine.
     
@@ -30,9 +30,9 @@ To use this databases dump with OpenDAoC-Core and OpenDAoC-PvP, follow these ste
     
 3.  Create a new database instance for OpenDAoC. You can choose any suitable name for your database.
     
-4.  Import the individual `.sql` files located in the `opendaoc-db-core` or `opendaoc-db-pvp` folders into your newly created database using your preferred method, such as command-line tools or a GUI client.
+4.  Import the individual `.sql` files located in the `opendaoc-db-core` folder into your newly created database using your preferred method, such as command-line tools or a GUI client.
     
-5.  Once the import is complete, configure `OpenDAoC-Core` or `OpenDAoC-PvP` to connect to your database. Refer to the respective project documentation for detailed instructions on configuring and running each project.
+5.  Once the import is complete, configure `OpenDAoC-Core` to connect to your database. Refer to the project documentation for detailed instructions on configuring and running the project.
     
 6.  Start the server. It should now be able to interact with the imported database.
     
@@ -51,6 +51,6 @@ Feel free to use, modify, and distribute it as permitted by the license.
 We would like to thank the Dark Age of Camelot community for their support and contributions to the OpenDAoC project.
 
 Please note that this repository only contains the cleaned up databases dump and does not include the entire OpenDAoC project. 
-For the complete OpenDAoC-Core and OpenDAoC-PvP projects, refer to their respective repositories.
+For the complete OpenDAoC-Core project, refer to its respective repository.
 
-For more information and detailed documentation, visit the [OpenDAoC website](https://opendaoc.com/) or our [Discord](https://discord.gg/RHqzyt8KyC). 
+For more information and detailed documentation, visit the [OpenDAoC website](https://opendaoc.com/) or our [Discord](https://discord.gg/RHqzyt8KyC).
