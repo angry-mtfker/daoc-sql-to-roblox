@@ -1,3 +1,0 @@
---[[
-	DAoC Character Data Manager
-	=============================
