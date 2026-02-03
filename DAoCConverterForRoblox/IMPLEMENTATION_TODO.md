@@ -7,7 +7,6 @@ Implement all necessary components to make the DAoC Roblox Experience fully func
 
 ## Phase 1: Character Creation System
 - [ ] 1.1 Create CharacterCreationUI.lua
-  - [ ] Login screen with username input
   - [ ] Race selection panel with descriptions
   - [ ] Class selection based on DAoC classes
   - [ ] Realm selection (Albion/Midgard/Hibernia)
