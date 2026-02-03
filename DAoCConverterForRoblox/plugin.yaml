@@ -1,0 +1,88 @@
+name: "DAoC SQL to Roblox Converter"
+id: 14935335449  -- Generate unique ID using: https://roblox.com/creator-tool/applications
+version: "1.0.0"
+description: "Convert DAoC SQL database files to Roblox Lua data formats with drag-and-drop functionality"
+authors:
+  - name: "DAoC Converter Team"
+    contact: "https://github.com/opendaoc/daoc-sql-to-roblox"
+    
+permissions:
+  - plugin_permission_all_urls
+  - plugin_permission_http_request
+
+settings:
+  - name: "OutputFormat"
+    description: "Choose how converted data is exported"
+    type: "string"
+    default: "Modulescript"
+    options: ["Modulescript", "JSON", "Table"]
+  - name: "AutoExport"
+    description: "Automatically export converted data to Roblox"
+    type: "bool"
+    default: true
+  - name: "PrettyPrint"
+    description: "Format Lua tables with indentation"
+    type: "bool"
+    default: true
+  - name: "MaxRowsPerFile"
+    description: "Maximum rows per output file (0 = unlimited)"
+    type: "number"
+    default: 1000
+
+ui:
+  width: 400
+  height: 500
+  title: "DAoC SQL to Roblox"
+  enable_drag_drop: true
+  
+  controls:
+    - name: "DropZone"
+      type: "Frame"
+      properties:
+        Size: "{0, 400}, {0, 150}"
+        Position: "{0, 0}, {0, 10}"
+        BackgroundColor3: "{0.2, 0.2, 0.2}"
+        BorderColor3: "{0.5, 0.5, 0.5}"
+    
+    - name: "FileList"
+      type: "ScrollingFrame"
+      properties:
+        Size: "{0, 380}, {0, 120}"
+        Position: "{0, 10}, {0, 170}"
+        BackgroundColor3: "{0.15, 0.15, 0.15}"
+    
+    - name: "ConvertButton"
+      type: "TextButton"
+      properties:
+        Size: "{0, 180}, {0, 40}"
+        Position: "{0, 110}, {0, 300}"
+        Text: "Convert Files"
+        BackgroundColor3: "{0.2, 0.6, 0.2}"
+    
+    - name: "StatusLabel"
+      type: "TextLabel"
+      properties:
+        Size: "{0, 380}, {0, 30}"
+        Position: "{0, 10}, {0, 350}"
+        Text: "Ready"
+        TextColor3: "{1, 1, 1}"
+    
+    - name: "ProgressBar"
+      type: "Frame"
+      properties:
+        Size: "{0, 380}, {0, 20}"
+        Position: "{0, 10}, {0, 390}"
+        BackgroundColor3: "{0.3, 0.3, 0.3}"
+    
+    - name: "ProgressFill"
+      type: "Frame"
+      properties:
+        Size: "{0, 0}, {0, 20}"
+        Position: "{0, 0}, {0, 0}"
+        BackgroundColor3: "{0.2, 0.6, 0.2}"
+
+events:
+  on_file_dropped: "Called when files are dropped onto the plugin"
+  on_conversion_complete: "Called when all files are converted"
+  on_error: "Called when an error occurs"
+
