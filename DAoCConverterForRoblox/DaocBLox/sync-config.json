@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "project": "DaocBLox",
+  "sync": {
+    "enabled": true,
+    "autoSync": true,
+    "intervalSeconds": 30,
+    "debounceMs": 3000,
+    "maxBatchSize": 100,
+    "timeoutSeconds": 60
+  },
+  "services": {
+    "include": [
+      "ServerScriptService",
+      "ReplicatedStorage",
+      "StarterGui",
+      "StarterPack",
+      "ServerStorage",
+      "Lighting",
+      "SoundService",
+      "StarterPlayer",
+      "Workspace"
+    ],
+    "exclude": [
+      "CoreGui",
+      "Chat",
+      "PlayerGui",
+      "Teams",
+      "Players",
+      "ReplicatedFirst"
+    ]
+  },
+  "scriptTypes": {
+    "include": [
+      "Script",
+      "ModuleScript",
+      "LocalScript"
+    ]
+  },
+  "fileManagement": {
+    "scriptsDir": "scripts",
+    "trashDir": ".rbxsync-trash",
+    "trashRetentionDays": 30,
+    "enableBackups": true,
+    "backupDir": "backups",
+    "keepBackups": 5
+  },
+  "server": {
+    "port": 3000,
+    "httpsEnabled": false,
+    "logLevel": "info",
+    "apiKey": null,
+    "corsOrigin": "*"
+  },
+  "notifications": {
+    "enabled": true,
+    "sound": false,
+    "showToast": true
+  },
+  "logging": {
+    "enabled": true,
+    "file": "sync.log",
+    "console": true,
+    "levels": ["debug", "info", "warn", "error"]
+  }
+}
+
